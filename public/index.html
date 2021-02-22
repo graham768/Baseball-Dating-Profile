@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="stylesheet" href="/build/tailwind.css" />
@@ -19,24 +19,24 @@
 </head>
 <body class="antialiased">
   <div class="card-container">
-    <div class="card" onclick="flip()">
+    <div class="card inset-0" onclick="flip()">
 
       
       <div class="front flex flex-col">
-        <div id="tap" class="absolute -top-8 -right-8 rounded-full h-24 w-24 flex items-center justify-center bg-red">Tap Me</div>
+        <div id="tap" class="absolute top-0 right-0 rounded-full h-16 w-16 xs:h-24 xs:w-24 flex items-center justify-center bg-red">Tap Me</div>
         <div class="p-2 block">
           <img src="frank.jpg" alt="frank" class="rounded-3xl">
         </div>
         <div class="flex m-3">
           <div class="-mt-5 flex-grow">
-            <div class="text-6xl text-left">
+            <div class="text-4xl xs:text-5xl sm:text-6xl text-left">
               Frank
             </div>
-            <div class="text-5xl text-left -mt-8">
+            <div class="text-3xl xs:text-4xl sm:text-5xl text-left -mt-6 sm:-mt-8">
               Frey
             </div>
           </div>
-          <table class="text-left">
+          <table class="text-xxs xs:text-sm sm:text-base text-left">
             <tr>
               <td>Bats: Right</td>
               <td>Throws: Right</td>
@@ -57,13 +57,13 @@
       <div class="back p-5">
         <div class="flex flex-col w-full h-full m-auto bg-white rounded-3xl rounded-tl-none text-black frank">
           <div class="flex justify-end">
-            <div class="text-4xl p-6 w-3/4 rounded-bl-full text-white" style="background-color: #5eabbf;">
-              <span class="text-4xl">Frank Frey</span> <span class="text-lg border p-1">Socialite</span>
+            <div class="text-lg sm:text-4xl p-6 w-3/4 rounded-bl-full text-white" style="background-color: #5eabbf;">
+              <span class="text-lg xs:text-4xl">Frank Frey</span> <span class="text-xs xs:text-lg border p-1">Socialite</span>
             </div>
           </div>
           <div class="flex-grow flex flex-col content-around m-4 mt-8">
             <h1 class="text-left">Complete Major League Dating Record</h1>
-            <table class="text-left mb-8">
+            <table class="text-left mb-2 xs:mb-8 text-xs xs:text-xl">
               <tr class="border-b border-black table-header">
                 <td>Year</td>
                 <td>At Bats</td>
@@ -100,7 +100,7 @@
                 <td>6</td>
               </tr>
             </table>
-            <p class="text-xl">Frank is in search of a woman who enjoys quality cuisine, appreciates vintage stereo equipment, and isn't put out by a man who seemingly knows someone everywhere he goes.
+            <p class="text-xs xs:text-xl sm:text-2xl">Frank is in search of a woman who enjoys quality cuisine, appreciates vintage stereo equipment, and isn't put out by a man who seemingly knows someone everywhere he goes.
             </p>
           </div>
           <div class="logos m-auto pb-8">

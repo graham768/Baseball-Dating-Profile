@@ -3,6 +3,7 @@ const { colors } = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     screens: {
+      xs: '500px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -41,6 +42,7 @@ module.exports = {
       ],
     },
     fontSize: {
+      xxs: '0.4rem',
       xs: '0.75rem',
       sm: '0.875rem',
       base: '1rem',

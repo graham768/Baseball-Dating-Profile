@@ -1,7 +1,11 @@
 
 .card-container {
-  width: 640px;
-  height: 800px;
+  cursor: pointer;
+  /* width: 640px;
+  height: 800px; */
+  width: 100vw;
+  max-width: 640px;
+  padding-top: min(820px, 130%);
   margin: auto;
   margin-top: 5rem;
   position: relative;
@@ -93,6 +97,24 @@ body {
   font-size: 8px;
   padding: 0 3px;
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .logos {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    justify-content: center;
+  }
+  
+  .logos img {
+    width: 30px;
+    align-self: center;
+  }
+  
+  .logos p {
+    font-size: 4px;
+  }
 }
 
 .frank::after {
