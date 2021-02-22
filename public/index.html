@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="stylesheet" href="/build/tailwind.css" />
+  <title>Site title goes here</title>
+  <script>
+    function flip() {
+      let card = document.querySelector('.card');
+      card.classList.toggle('flipped');
+
+      let tap = document.querySelector('#tap');
+      tap.classList = 'tap-hidden'
+    }
+  </script>
+</head>
+<body class="antialiased">
+  <div class="card-container">
+    <div class="card" onclick="flip()">
+
+      
+      <div class="front flex flex-col">
+        <div id="tap" class="absolute -top-8 -right-8 rounded-full h-24 w-24 flex items-center justify-center bg-red">Tap Me</div>
+        <div class="p-2 block">
+          <img src="frank.jpg" alt="frank" class="rounded-3xl">
+        </div>
+        <div class="flex m-3">
+          <div class="-mt-5 flex-grow">
+            <div class="text-6xl text-left">
+              Frank
+            </div>
+            <div class="text-5xl text-left -mt-8">
+              Frey
+            </div>
+          </div>
+          <table class="text-left">
+            <tr>
+              <td>Bats: Right</td>
+              <td>Throws: Right</td>
+            </tr>
+            <tr>
+              <td>Ht: 5'9 (in cleats)</td>
+              <td>Wt: 150lbs</td>
+            </tr>
+            <tr>
+              <td>Hometown: Chicago</td>
+              <td>Age: 40ish</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="back p-5">
+        <div class="flex flex-col w-full h-full m-auto bg-white rounded-3xl rounded-tl-none text-black frank">
+          <div class="flex justify-end">
+            <div class="text-4xl p-6 w-3/4 rounded-bl-full text-white" style="background-color: #5eabbf;">
+              <span class="text-4xl">Frank Frey</span> <span class="text-lg border p-1">Socialite</span>
+            </div>
+          </div>
+          <div class="flex-grow flex flex-col content-around m-4 mt-8">
+            <h1 class="text-left">Complete Major League Dating Record</h1>
+            <table class="text-left mb-8">
+              <tr class="border-b border-black table-header">
+                <td>Year</td>
+                <td>At Bats</td>
+                <td>Runs</td>
+                <td>Wins</td>
+                <td>Losses</td>
+              </tr>
+              <tr class="border-b border-black">
+                <td>2021</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr class="border-b border-black">
+                <td>2020</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr class="border-b border-black">
+                <td>2019</td>
+                <td>21</td>
+                <td>11</td>
+                <td>6</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>23</td>
+                <td>9</td>
+                <td>4</td>
+                <td>6</td>
+              </tr>
+            </table>
+            <p class="text-xl">Frank is in search of a woman who enjoys quality cuisine, appreciates vintage stereo equipment, and isn't put out by a man who seemingly knows someone everywhere he goes.
+            </p>
+          </div>
+          <div class="logos m-auto pb-8">
+            <img class="topps" src="http://kylephx.com/cards/assets/topps.svg" alt="Topps logo"/>
+            <p>MAJOR LEAGUE BASEBALL TRADEMARKS AND COPYRIGHTS ARE USED WITH<br/> PERMISSION OF MAJOR LEAGUE BASEBALL PROPERTIES, INC. OFFICIAL LICENSEE--MLBPA<br/> &copy; 2001 FLEER/SKYBOX INTERNATIONAL LP, PRINTED IN U.S.A. TRADITION/2001
+            </p>
+            <img class="mlb" src="http://kylephx.com/cards/assets/mlb.svg" alt="Major League Baseball logo"/>
+            <img class="mlbpa" src="http://kylephx.com/cards/assets/mlbpa.png" alt="MLB Players Association logo"/>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>

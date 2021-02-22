@@ -1,0 +1,110 @@
+
+.card-container {
+  width: 640px;
+  height: 800px;
+  margin: auto;
+  margin-top: 5rem;
+  position: relative;
+  border: 1px solid #ccc;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+}
+.card > div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  /* font-size: 140px; */
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.card .front {
+background: #5eabbf;
+}
+.card .back {
+  background: #5eabbf;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+.card.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.tap-hidden {
+  display: none !important;
+}
+
+
+td{
+  padding: 0.2rem;
+}
+.back td {
+  font-weight: normal
+}
+.table-header td{
+  font-weight: bold
+}
+td:first-child { font-weight: bold }
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.logos {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  justify-content: center;
+}
+
+.logos img {
+  width: 50px;
+  align-self: center;
+}
+
+.logos p {
+  font-size: 8px;
+  padding: 0 3px;
+  text-align: center;
+}
+
+.frank::after {
+  content: "";
+  background-image: url(../gauntlet.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.17;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
